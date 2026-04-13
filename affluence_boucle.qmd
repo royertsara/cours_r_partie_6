@@ -1,0 +1,38 @@
+---
+title: "Affluence par boucle"
+author: "Royer"
+date: today
+format:
+  html:
+    theme: flatly
+    toc: true
+    toc-depth: 2
+    code-fold: false
+    code-tools: false
+execute:
+  echo: false
+params:
+  boucle: "880"
+
+
+---
+# Packages:
+```{r}
+library(firstlib.royer)
+
+```
+
+# 2.Initialisation variable boucle:
+```{r}
+boucle<-880
+```
+
+# 3.Graphique boucle:
+```{r}
+df_880<-filtrer_trajet(df_velo,boucle=boucle)
+```
+
+```{r}
+plot_distribution_semaine(df_880)
+```
+
